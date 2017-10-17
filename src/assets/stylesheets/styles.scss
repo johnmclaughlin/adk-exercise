@@ -1,0 +1,87 @@
+body {
+  font-family: "Crimson Text", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-image: url(../images/library.jpg);
+  background-size: cover;
+  color: white;
+  margin: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  span {
+    padding-left: 15px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.search__form {
+  width: 600px;
+  margin: 0 auto;
+
+  input {
+    height: 55px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+    font-family: "Crimson Text";
+    font-size: 48px;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+
+  input::-webkit-input { /* For WebKit browsers */
+    height: 55px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+    font-family: "Crimson Text";
+    font-size: 48px;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+}
+
+.results {
+  width: 960px;
+  height: 800px;
+  overflow: auto;
+  background: rgba(0,0,0,.5);
+  margin: 0 auto;
+
+  h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    border-top: 3px solid white;
+    margin-top: 0;
+  }
+
+  li {
+    border-bottom: 1px solid #2b2b2b;
+    font-size: 16px;
+
+    span {
+      color: #999999;
+      margin-left: 20px;
+      font-size: 20px;
+    }
+  }
+}
