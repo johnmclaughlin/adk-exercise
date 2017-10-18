@@ -33,6 +33,7 @@ nav ul {
   input {
     height: 55px;
     width: 100%;
+    color: white;
     background-color: transparent;
     border: none;
     border-bottom: 3px solid rgba(255,255,255,0.5);
@@ -40,19 +41,54 @@ nav ul {
     font-size: 48px;
     font-style: italic;
     letter-spacing: 1px;
-  }
 
-  input::-webkit-input { /* For WebKit browsers */
-    height: 55px;
-    width: 100%;
-    background-color: transparent;
+    &::-webkit-autofill {
+      color: white;
+      background-color: transparent;
+    }
+
+    &::placeholder {
+      color: white;
+      background-color: transparent;
+    }
+
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: white;
+      background-color: transparent;
+    }
+    &::-moz-placeholder { /* Firefox 19+ */
+      color: white;
+      background-color: transparent;
+    }
+  
+    &::-webkit-input { /* For WebKit browsers */
+      height: 55px;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid rgba(255,255,255,0.5);
+      font-family: "Crimson Text";
+      font-size: 48px;
+      font-style: italic;
+      letter-spacing: 1px;
+    }
+  }
+    /* Change Autocomplete styles in Chrome*/
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus
+  input:-webkit-autofill, 
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
     border: none;
-    border-bottom: 3px solid rgba(255,255,255,0.5);
-    font-family: "Crimson Text";
-    font-size: 48px;
-    font-style: italic;
-    letter-spacing: 1px;
-}
+    -webkit-text-fill-color: white;
+    background-color: transparent;
+    transition: background-color 5000s ease-in-out 0s;
+  }
 }
 
 .results {
@@ -64,8 +100,10 @@ nav ul {
 
   h1 {
     font-size: 48px;
+    font-weight: 700;
     text-transform: uppercase;
     margin: 0;
+    letter-spacing: 1px;
   }
 
   ul {
