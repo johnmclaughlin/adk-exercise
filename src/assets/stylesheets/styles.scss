@@ -90,6 +90,7 @@ nav ul {
     background-color: transparent;
     transition: background-color 5000s ease-in-out 0s;
   }
+  textarea, input, button { outline: none; }
 }
 
 .results {
@@ -116,6 +117,12 @@ nav ul {
   li {
     border-bottom: 1px solid #2b2b2b;
     font-size: 16px;
+
+    a {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
 
     span {
       color: #999999;

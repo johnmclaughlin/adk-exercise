@@ -7,7 +7,6 @@ const ResultList = props => {
     console.log(results);
 	let books;
 	if (results.length > 0) {
-		var i=0;
 		books = results.map(book =>
 			<Books
 				title={book.title_suggest}
@@ -17,7 +16,8 @@ const ResultList = props => {
                 publisher={book.publisher}
                 oclc={book.oclc}
                 goodreads={book.goodreads}
-                key={i++}
+                key={book.key.replace('/works/', '')}
+				id={book.key.replace('/works/', '')}
 			/>
 		);
 	} else {

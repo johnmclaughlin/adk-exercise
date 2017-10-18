@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Book = props =>
-	<div className="book" key={props.key}>
+	<div className="book" key={props.id}>
         <ul>
             <li>TITLE <span>{props.title}</span></li>
             <li>AUTHOR <span>{props.author}</span></li>
