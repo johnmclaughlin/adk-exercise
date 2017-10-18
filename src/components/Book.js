@@ -1,6 +1,9 @@
 import React from 'react';
+import ResultList from './ResultList';
+import Search from './Search';
 
-const Book = props =>
+const Book = (props) =>
+
 	<div className="book" key={props.id}>
         <ul>
             <li>TITLE <span>{props.title}</span></li>
@@ -12,6 +15,6 @@ const Book = props =>
             <li>GOODREADS ID <span>{props.goodreads}</span></li>
         </ul>
         <img src={props.preview} />
-	</div>;
+	</div>
 
 export default Book;

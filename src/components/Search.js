@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Results from './Results';
+import ResultList from './ResultList';
 import SearchForm from './SearchForm';
 
 
@@ -38,7 +38,7 @@ export default class Search extends Component {
 				<div className="main-content">
 					{this.state.loadingState
 						? <SearchForm onSearch={this.performSearch} />
-						: <Results data={this.state.books} />}
+						: <ResultList data={this.state.books} />}
 				</div>
 			</div>
 		);
