@@ -41,6 +41,7 @@ nav ul {
     font-size: 48px;
     font-style: italic;
     letter-spacing: 1px;
+    -webkit-appearance: none;
 
     &::-webkit-autofill {
       color: white;

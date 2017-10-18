@@ -17,7 +17,7 @@ export default class SearchForm extends Component {
 
 	render() {
 		return (
-			<form className="search__form" onSubmit={this.handleSubmit}>
+			<form spellcheck="false" className="search__form" onSubmit={this.handleSubmit}>
 				<input
 					type="search"
 					onChange={this.onSearchChange}
