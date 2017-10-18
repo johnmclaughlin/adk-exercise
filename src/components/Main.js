@@ -6,7 +6,7 @@ import ReadingList from './ReadingList'
 const Main = () => (
   <main>
     <Switch>
-      <Route path='/' component={Search}/>
+      <Route exact path='/' component={Search}/>
       <Route path='/readinglist' component={ReadingList}/>
     </Switch>
   </main>

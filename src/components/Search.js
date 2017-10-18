@@ -35,14 +35,9 @@ export default class Search extends Component {
 	render() {
 		return (
 			<div>
-				<div className="main-header">
-					<div className="inner">
-						<SearchForm onSearch={this.performSearch} />
-					</div>
-				</div>
 				<div className="main-content">
 					{this.state.loadingState
-						? <p></p>
+						? <SearchForm onSearch={this.performSearch} />
 						: <Results data={this.state.books} />}
 				</div>
 			</div>
